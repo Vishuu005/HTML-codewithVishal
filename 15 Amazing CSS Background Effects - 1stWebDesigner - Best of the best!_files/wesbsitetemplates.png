@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="SfHyONrpVLzNeTt+aAp10dl7UdoysMunjFg/NnkDY2ZZWNKHTLWj+/3st8kgfPs0mAv03lBDaxTRKcb+PzZCfQ==" />
+    <meta name="csp-nonce" />
+    <title></title>
+
+    <!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl+decodeURIComponent('%26gtm_auth=WBScFyDzzxh_Y1r3U0mmVg%26gtm_preview=env-308%26gtm_cookies_win=x');f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer', "GTM-WQ4HG7B");
+</script> 
+<!-- End Google Tag Manager -->
+
+    <link rel="stylesheet" media="all" href="//public.getcloudapp.com/assets/application-868c6038ae699c1f805148b066befc851c37f5b7b5da43912762f77a0dd6300e.css" />
+    <link rel="stylesheet" media="all" href="//public.getcloudapp.com/assets/vue-loading-d374e83199d829e18a5bc367789a64e76499802b1b8b9aee511da330e3276a8b.css" />
+
+    <link rel="stylesheet" content="default-src 'self'" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="shortcut icon" type="image/x-icon" href="//public.getcloudapp.com/packs/media/images/cloudapp-favicon-d053fc47958e1b85c892b5de0d7ac93a.png" />
+    <script src="https://js.recurly.com/v4/recurly.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async="async" defer="defer"></script>
+
+    <script src="//public.getcloudapp.com/assets/video.min-7a59f6869698f39a90206db8736a649b3f81597c3f99b93780b5506e992cf1b8.js"></script>
+    <link rel="stylesheet" media="screen" href="//public.getcloudapp.com/assets/video-js.min-9c23fb766fcab96837930e64eb1291c295505c80570f9782a0b629d4eefd4c35.css" />
+    <script src="//public.getcloudapp.com/assets/videojs.hotkeys.min-cfa6b5a9e5b4479105a79d52b06d82c2c1e17d2da1d4e89f848b8cc0ecad4d36.js"></script>
+
+    
+      <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+          if (typeof jwt !== "undefined") {
+            jwt.clear()
+          }
+        });
+      </script>
+      <meta name="robots" content="none">
+  </head>
+
+  <body id="viewer_v2" class="viewer_v2">
+      <div id="g_id_onload"
+        data-client_id="641478567492-2l5kcdhdl4ab3jfgtk7k8lu5qsn18ond.apps.googleusercontent.com"
+        data-login_uri="https://cl.ly/api/v5/users/google_sign_in"
+        data-signin_return_to="https://cl.ly/2L3S0z0V0335/wesbsitetemplates.png"
+        data-signup_tracking="utm_source=viewer&utm_medium=one_tap&utm_campaign=one_tap_signup&utm_content=drop:bLuQYPA"
+        data-signin_tracking="utm_source=viewer&utm_medium=one_tap&utm_campaign=one_tap_login">
+      </div>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ4HG7B%26gtm_auth=WBScFyDzzxh_Y1r3U0mmVg%26gtm_preview=env-308%26gtm_cookies_win=x"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="container-fluid" id="viewer-vue">
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
+
+      <div class="viewer_nav" v-show="$route.name != 'annotate'">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-left-section">
+    <logo
+      :show-cloudapp-link="true"
+    >
+    </logo>
+    <div class="item-name d-flex" style="flex-grow: 1" v-if="!hoverLogo && !edit" v-on:mouseover="hoverName = true" v-on:mouseleave="hoverName = false">
+      <div style="max-width: 40%; overflow: hidden; text-overflow: ellipsis; margin-right: 0.5rem">
+        <editable-item-name :forced-name="preview.item.title" :item="item" :is-owner="isOwner">
+        </editable-item-name>
+      </div>
+    </div>
+    <div v-if="hoverLogo" class="blue-link">
+      <a class="navbar-brand link-disabled" data-testid="text-link-back-to-dashboard" href="https://www.getcloudapp.com/screen-recorder?utm_source=viewer&amp;utm_campaign=viewer_header_link">&larr; Dashboard</a>
+    </div>
+  </div>
+
+  <div class="navbar-right-section">
+        <a class="cloudapp-link primary" href="https://share.getcloudapp.com/login?return_to=https%3A%2F%2Fshare.getcloudapp.com%2F2L3S0z0V0335"> Log in </a>
+          <get-cloudapp-button link="https://share.getcloudapp.com/login?return_to=https%3A%2F%2Fshare.getcloudapp.com%2F2L3S0z0V0335">
+          </get-cloudapp-button>
+  </div>
+</nav>
+
+        <div class="container alerts">
+          <div class="flash alert alert-danger"></div>
+          <div class="flash alert alert-success"></div>
+          
+          
+        </div>
+          <div class="verify-container mt-2">
+  <div class="col-md-12">
+    <div class="card">
+      <p class="text-center p-2" data-testid="disabled-message">This item is currently disabled. Please contact the owner.</p>
+    </div>
+  </div>
+</div>
+
+        
+        <invite-collaborators-modal></invite-collaborators-modal>
+        <enjoy-trial-modal v-if="currentUserCanAdminOrg"></enjoy-trial-modal>
+        <prize-steps-modal iframe-url="https://d2plwz9jdz9z5d.cloudfront.net/webviews/prize-steps/index.html?token=&amp;source_app=web"></prize-steps-modal>
+        <view-only-modal v-if="itemOrganization.attributes.current_user_view_only"></view-only-modal>
+        <free-upgrade-modal></free-upgrade-modal>
+      </div>
+    </div>
+
+    <meta name="action-cable-url" content="ws://localhost:3334/cable" />
+    <link rel="stylesheet" media="screen" href="//public.getcloudapp.com/packs/css/viewer-f7824c9b.css" />
+    <script src="//public.getcloudapp.com/packs/js/viewer-8215da828a72bfb75df2.js"></script>
+    <script src="//public.getcloudapp.com/packs/js/event_tracker-a99228785a98386b7e04.js"></script>
+
+    <script src="//public.getcloudapp.com/assets/application-3e467c7bb783bc89d2f6f338a2a2a1ed5da6f588e7138e4d9f00191e901150bf.js"></script>
+
+    <form id="google-login" action="/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="n8MdKgGNTVxBEzD4AH8qDXLz22cpxYOmzWK2dQ2lBFQ4BsliYeTDtA//Ib4Ok/9oLN+9B9p8bY7XSyd+Uh+gzA==" />
+  <input type="hidden" name="session[jwt]" id="session_jwt" />
+</form>
+<script>
+  var googleClientId = "641478567492-2l5kcdhdl4ab3jfgtk7k8lu5qsn18ond.apps.googleusercontent.com";
+  var callbackUrl = "https://cl.ly/auth/google_oauth2/callback";
+  function initGAuth() {
+    gapi.load('auth2', function() {
+      // Ready.
+      $('.google-login-button').click(function(e) {
+        e.preventDefault();
+        gapi.auth2.authorize({
+          client_id: googleClientId,
+          scope: 'email profile',
+          response_type: 'code',
+          state: `${location.search.slice(1)}&redirect_to=${location.pathname}`
+        }, function(response) {
+          if (response && !response.error) {
+            // google authentication succeed, now post data to server.
+            jQuery.ajax({
+              type: 'POST',
+              url: callbackUrl,
+              data: response,
+              headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+              },
+              success: function(response) {
+                try {
+                  if (new URL(response.redirect_to).origin != "https://share.getcloudapp.com" && response.redirect_to) {
+                    response.redirect_to += ("?token=" + response.jwt);
+                  }
+                  window.location = !!response.redirect_to ? response.redirect_to : '/dashboard';
+                } catch (err) {
+                  window.location = !!response.redirect_to ? response.redirect_to : '/dashboard';
+                }
+              },
+              error: function(request){
+                let response = request.responseJSON;
+                let errors   = response.errors && response.errors.join('\n');
+                let redirect = response.metadata && response.metadata.redirect_to;
+
+                if (errors)
+                  window.localStorage.setItem(
+                    'flash',
+                    JSON.stringify({type: 'danger', message: errors})
+                  );
+
+                if (redirect)
+                  window.location = redirect;
+              }
+            });
+          } else {
+            console.log(response.error)
+            // TODO: how to alert the user something went wrong?
+          }
+        });
+      });
+    });
+  };
+</script>
+<script src="https://apis.google.com/js/platform.js?onload=initGAuth" async defer></script>
+
+    
+
+    <script>
+      $(document).ready(function (params) {
+        if(window.location.href.indexOf('#download') != -1) { $('#downloadModal').modal(); }
+
+        var dismissBanner = $('#dismiss-notification-banner')
+        if(dismissBanner[0]){
+          var broadcastShown = localStorage.getItem("broadcast-dismissed-" + dismissBanner.data().broadcastid)
+          if(!broadcastShown){
+            $('.notification-hidden-content').hide()
+            $('.broadcast-notification-banner').css('display', 'flex');
+          }else{
+            $('.notification-hidden-content').show()
+          }
+
+          dismissBanner.on('click', function(e){
+            localStorage.setItem("broadcast-dismissed-" + e.target.dataset.broadcastid, 1)
+            $('.broadcast-notification-banner').hide();
+            $('.notification-hidden-content').show();
+          })
+        }
+      })
+    </script>
+  </body>
+</html>

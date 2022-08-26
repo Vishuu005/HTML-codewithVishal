@@ -1,0 +1,19 @@
+.Gamer
+{
+    padding: 0%;
+    margin: auto;
+    background-color: black;
+    background-position: 0%;
+    background-repeat: no-repeat;
+
+}
+.img
+{
+    margin: auto;
+    padding: 0%;
+    background-image: -webkit-gradient();
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
