@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Timeline</title>
+    <style>
+      body {
+        background: #ffffff;
+      }
+      .timeline {
+        margin: 0 auto;
+        max-width: 750px;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+        font-family: "Fira Sans", sans-serif;
+        color: #777777;
+      }
+      .timeline__component {
+        margin: 0 20px 20px 20px;
+      }
+      .timeline__component--bg {
+        padding: 1.5em;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 3px #106fb4;
+        border-radius: 10px;
+      }
+      /* LEAVE TILL LAST */
+      .timeline__component--bottom {
+        margin-bottom: 0;
+      }
+      .timeline__middle {
+        position: relative;
+        background: #d6d6d6;
+      }
+      .timeline__point {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15px;
+        height: 15px;
+        background: #3f8bc3;
+        border-radius: 50%;
+      }
+      /* LEAVE TILL LAST */
+      .timeline__point--bottom {
+        top: initial;
+        bottom: 0;
+      }
+      .timeline__date--right {
+        text-align: right;
+        color: #106fb4;
+      }
+      .timeline__title {
+        margin: 0;
+        font-size: 1.15em;
+        font-weight: bold;
+        color: #391472;
+      }
+      .timeline__paragraph {
+        line-height: 1.5;
+      }
+      .timeline__date {
+        color: #106fb4;
+      }
+      .titol {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timeline">
+      <div class="timeline__component">
+        <div class="timeline__date timeline__date--right">2001</div>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">CodewithVishal</h2>
+        <p class="timeline__paragraph">
+          Code With Vishal this is place for simple content with tutorial and
+          many other things related to like, Programming, Web Development, iOS
+          Development, Android Development, Projects etc . We are not solo
+          Creator we are in team and we try to provide best to best content for
+          our user.
+        </p>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">The first article</h2>
+        <p class="timeline__paragraph">
+          We publish our first original article, at
+          <span class="titol"
+            ><a href="https://www.CodewithVishal.com/" target="_blank"
+              >Web dev content</a
+            ></span
+          >.
+        </p>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component">
+        <div class="timeline__date">2004</div>
+      </div>
+      <div class="timeline__component">
+        <div class="timeline__date timeline__date--right">2006</div>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">CodewithVishal</h2>
+        <p class="timeline__paragraph">
+          Code With Vishal this is place for simple content with tutorial and
+          many other things related to like, Programming, Web Development, iOS
+          Development, Android Development, Projects etc .
+        </p>
+      </div>
+      <div
+        class="timeline__component timeline__component--bottom timeline__component--bg"
+      >
+        <h2 class="timeline__title">CodewithVishal</h2>
+        <p class="timeline__paragraph">
+          Code With Vishal this is place for simple content with tutorial and
+          many other things related to like, Programming, Web Development, iOS
+          Development, Android Development, Projects etc .
+        </p>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+        <div class="timeline__point timeline__point--bottom"></div>
+      </div>
+      <div class="timeline__component timeline__component--bottom">
+        <div class="timeline__date">2008</div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline__component">
+        <div class="timeline__date timeline__date--right">2014</div>
+      </div>
+      <div class="timeline__middle"></div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">CodewithVishal</h2>
+        <p class="timeline__paragraph">
+          Code With Vishal this is place for simple content with tutorial and
+          many other things related to like, Programming, Web Development, iOS
+          Development, Android Development, Projects etc .
+        </p>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">CodewithVishal</h2>
+        <p class="timeline__paragraph">
+          Code With Vishal this is place for simple content with tutorial and
+          many other things related to like, Programming, Web Development, iOS
+          Development, Android Development, Projects etc .
+        </p>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component"></div>
+      <div class="timeline__component">
+        <div class="timeline__date timeline__date--right">2017</div>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">CodewithVishal</h2>
+        <p class="timeline__paragraph">
+          In December, we reached our article number 200.
+        </p>
+      </div>
+      <div
+        class="timeline__component timeline__component--bottom timeline__component--bg"
+      >
+        <h2 class="timeline__title">CodewithVishal</h2>
+        <p class="timeline__paragraph">
+          Code With Vishal this is place for simple content with tutorial and
+          many other things related to like, Programming, Web Development, iOS
+          Development, Android Development, Projects etc .
+        </p>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+        <div class="timeline__point timeline__point--bottom"></div>
+      </div>
+      <div class="timeline__component timeline__component--bottom">
+        <div class="timeline__date">2021</div>
+      </div>
+    </div>
+  </body>
+</html>
