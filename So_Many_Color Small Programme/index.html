@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body 
+    /* h1
+    {
+        color: hotpink;
+    } */
+    {
+      margin: 0;
+    }
+
+    #rainbow-background {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red,
+        red
+      );
+      background-size: 1000% 100%;
+      animation: create-rainbow-gradient-shift 30s ease infinite;
+      text-align: center;
+    }
+
+    @keyframes create-rainbow-gradient-shift {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+
+    .transparent-h1 {
+      padding-top: 40vh;
+      margin: 0;
+      letter-spacing: 4px;
+      font-size: 3em;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: "Arial Black";
+      opacity: 0.7;
+      color: white;
+      text-shadow: 0 0 15px black;
+    }
+  </style>
+  <body>
+    <center><strong><b><h1>VISHAL PANDEY</h1></b></strong></center>
+    <div id="rainbow-background">
+      <h1 class="transparent-h1">Happy Birthday Pihu & Akku Darling(Rakshash)!</h1>
+    </div>
+  </body>
+</html>
