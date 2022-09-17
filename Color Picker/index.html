@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+
+body {
+  display: flex;
+  justify-content: center;
+ background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+p {
+  letter-spacing: 1px;
+  font-size:15px;
+  text-transform: uppercase;
+  font-family: 'Calibri';
+  color: white;
+}
+
+.display-pick {
+  display:flex;
+  flex-direction:column; 
+}
+
+.settings {
+    justify-content:center;
+    flex-direction:column;
+    text-align: center;
+    margin:15px 0 0 5px;
+    box-shadow: 0 0 5px 3px white;
+    background:#111;
+}
+
+.circle{
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius:50px;
+  margin-left:auto;
+  margin-right:auto;
+  background:white;
+  box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: grid;
+  grid-template-columns: repeat(10,0.5fr);
+  grid-template-rows: repeat(10,0.5fr);
+  text-align: center;
+  flex-direction: column;
+  margin-top:15px;
+  padding:20px;
+  box-shadow: 0 0 5px 3px white;
+  background:#111;
+}
+
+.container > span {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 100%;
+  transition: all 1s ease;
+  color:white;
+}
+
+.btn-hover {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600; 
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-6 {
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+</style>
+<body>
+    <div class="container">
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+      </div>
+      <div class="settings">
+       <button class="btn-hover color-6">Start Colour Picker</button>
+        <div class="display-pick">
+          <div class="circle"></div>
+          <div class="colorCode">
+            <p><b style="color: red">red:</b> 255</p>
+            <p><b style="color: green">green:</b> 255</p>
+            <p><b style="color: blue">blue:</b> 255</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script Code -->
+    <script>
+        const span = document.querySelectorAll("span");
+const colorPallet = function() {
+   const selectedColours = [];
+   for(i = 0; i < 10; i++){
+      var red = 1 + Math.floor(Math.random() * 254)
+      var green = 1 + Math.floor(Math.random() * 254)
+      var blue = 1 + Math.floor(Math.random() * 254)
+      selectedColours.push('rgb('+red+','+green+','+blue+')');
+   }
+   return selectedColours;
+}
+
+$('.btn-hover').click(function() {
+  setInterval(action, timeout);
+});
+
+$('span').hover(function() {
+    $('.display-pick').css({   
+        'display': 'flex'
+    });
+    var colors = getRGB($(this).css('color'))
+    $('.circle').css({   
+        'background': $(this).css('color')
+    });
+}).mouseout(function() {
+      $('.display-pick').css({
+        /*'display': 'none' */
+  });
+});
+
+function getRGB(str){
+  var match = str.match(/rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d?))\))?/);
+     
+
+  
+  $( "p:first" ).html('<b style="color: red">red:</b> <b style="color: white">' + match[1] + '</b>');
+  
+  $( "p:nth-child(2)" ).html('<b style="color: green">green:</b> <b style="color: white">' + match[2] + '</b>');
+  
+  $( "p:last" ).html('<b style="color: blue">blue:</b> <b style="color: white">' + match[3] + '</b>');
+  
+  return match ? {
+    red: match[1],
+    green: match[2],
+    blue: match[3]
+  } : {};
+}
+
+var timeout = 1000;
+var action = function() {
+    for(i = 0; i < 10; i++){
+      for(j = 0; j < 100; j+=10){
+         var red = 1 + Math.floor(Math.random() * 254)
+         var green = 1 + Math.floor(Math.random() * 254)
+         var blue = 1 + Math.floor(Math.random() * 254)
+        
+        span[i+j].style.color = 'rgb('+red+','+green+','+blue+')';    
+      }
+    }
+}
+
+
+    </script>
+</body>
+</html>
